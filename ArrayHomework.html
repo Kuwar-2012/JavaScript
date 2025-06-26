@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            Array Homework
+        </h1>
+        <p>
+        Arrays are ordered, zero-indexed lists of values, known as elements.
+        </p>
+        <p id="myjoin">
+        </p>
+        <p id="mypop1">
+        </p>
+        <p id="mypop2">
+        </p>
+        <script>
+            var ArrayCars=["Mustang", "Porsche", "Merecedes", "Ford", "Toyota", "Pagani"];
+            document.getElementById("myjoin").innerHTML=ArrayCars.join(" * ");
+            document.getElementById("mypop1").innerHTML = ArrayCars;
+            ArrayCars.pop();
+            document.getElementById("mypop2").innerHTML = ArrayCars;
+        </script>
+    </body>
+</html>
