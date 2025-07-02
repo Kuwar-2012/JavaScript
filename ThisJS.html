@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>
+            This KeyWord in JS
+        </h1>
+        <p id="student1">
+        </p>
+        <p id="student2">
+        </p>
+        <script>
+            class student{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age(){
+                var date=new Date()
+                return date.getFullYear() - this.year;
+            }
+            }
+
+            student1=new student("Riya",2012);
+            document.getElementById("student1").innerHTML ="My name is " + student1.name + ". I am born in " + student1.year + ". And my age is " + student1.age() + ".";
+        </script>
+    </body>
+</html>
