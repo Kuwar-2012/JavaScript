@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="details">
+    </p>
+    <script>
+        class Player {
+            constructor(name) {
+                this.playerName = name;
+            }
+            Intro() {
+                return "I am " + this.playerName;
+            }
+        }
+        class Position extends Player {
+            constructor(name, position) {
+                super(name);
+                this.position = position;
+            }
+            Result() {
+                return this.Intro() + ". I play " + this.position
+            }
+        }
+        var myPlayer = new Position("Kuwaryad", "Small Forward");
+        document.getElementById("details").innerHTML = myPlayer.Result();
+    </script>
+</body>
+
+</html>
