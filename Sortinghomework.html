@@ -17,16 +17,16 @@
     <p id="result">
     </p>
     <script>
-        var points = ["Lebron James", "Steph Curry", "Julius Randle", "Anthony Edwards", "Anthony Davis", "Trae Young"]
-        document.getElementById("result").innerHTML = points;
+        var players = ["Lebron James", "Steph Curry", "Julius Randle", "Anthony Edwards", "Anthony Davis", "Trae Young"];
+        document.getElementById("result").innerHTML = players;
         function ascending() {
-            points.sort(function (a, b) { return a - b });
-            document.getElementById("result").innerHTML = points;
+            players.sort();
+            document.getElementById("result").innerHTML = players;
         }
 
         function descending() {
-            points.sort(function (a, b) { return b - a });
-            document.getElementById("result").innerHTML = points;
+            players.reverse();
+            document.getElementById("result").innerHTML = players;
         }
     </script>
 </body>
